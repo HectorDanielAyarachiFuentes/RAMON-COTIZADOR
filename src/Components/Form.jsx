@@ -29,8 +29,8 @@ export function Form() {
   return (
     <div className=" center div-cotizador">
       <h2 className="center separador">Completa los datos solicitados</h2>
-      <Property datos={propiedadData} setPropiedad={setSelectPropiedad} />
-      <Location datos={ubicacionData} setUbicacion={setSelectUbicacion} />
+      <Property datos={propiedadData} value={selectPropiedad} setPropiedad={setSelectPropiedad} />
+      <Location datos={ubicacionData} value={selectUbicacion} setUbicacion={setSelectUbicacion} />
       <Meters2 inputMts2={inputMts2} setInputMts2={setInputMts2} />
       <Button
         propiedadData={propiedadData}
