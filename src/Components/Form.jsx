@@ -15,7 +15,7 @@ export function Form() {
   const [propiedadData, setPropiedadData] = useState([]);
 
   useEffect(() => {
-    fetch("/src/Components/datos.json")
+    fetch("/datos.json")
       .then((response) => response.json())
       .then((data) => {
         const ubicacion = data.filter((item) => item.categoria === "ubicacion");
